@@ -1,0 +1,64 @@
+.lb {
+    font-size: 14px;
+    margin: 0px;
+    margin-bottom: 2px;
+}
+
+*::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+    transition: none !important;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: auto;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust as needed */
+  }
+
+  .text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+  }
+
+  .modal-overlay {
+    /* background-color: black; */
+    z-index: 10000;
+  }
+
+  .react-datepicker__header {
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff !important;
+    padding: 5px !important;
+  }
+
+  .react-datepicker-popper[data-placement^=top] .react-datepicker__triangle, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+    margin-left: -4px;
+    position: absolute;
+    width: auto !important;
+}
+
+.react-datepicker__month .react-datepicker__month-text, .react-datepicker__month .react-datepicker__quarter-text, .react-datepicker__year .react-datepicker__year-text {
+  margin: 0px !important;
+  padding: 10px !important;
+}
+
+react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+  background-color: var(--primary-bg-color) !important;
+  color: #fff !important;
+}
+
+  /* table.dataTable.table-condensed>thead>tr>th {
+    padding-right: 3px !important;
+  } */
