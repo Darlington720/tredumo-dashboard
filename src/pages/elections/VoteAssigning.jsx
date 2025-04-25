@@ -11,6 +11,7 @@ const years = [
   { value: 1, label: "2022-2023" },
   { value: 2, label: "2023-2024" },
   { value: 3, label: "2024-2025" },
+  { value: 4, label: "2025-2026" },
 ];
 
 const campus = [
@@ -281,6 +282,7 @@ function VoteAssigning() {
             </Col>
 
             {selectedElection ? (
+              selectedElection.value.id === 8 ||
               selectedElection.value.id === 5 ||
               selectedElection.value.id === 2 ? (
                 <Col lg={3}>

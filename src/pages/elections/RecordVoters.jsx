@@ -5,9 +5,9 @@ import ReactApexChart from "react-apexcharts";
 import { Link } from "react-router-dom";
 
 import votersApi from "../../../api/votersApi";
-import zziwa from "../../../src/assets/img/guild/1.png";
-import benon from "../../../src/assets/img/guild/2.png";
-import noah from "../../../src/assets/img/guild/3.png";
+import katende from "../../../src/assets/img/guild/1.png";
+import mawanda from "../../../src/assets/img/guild/2.png";
+import kama from "../../../src/assets/img/guild/3.png";
 // import socket from "../../../api/socketIOClient";
 import urls from "../../../api/apiConstants";
 import io from "socket.io-client";
@@ -105,8 +105,8 @@ const CardContent = ({
         src={image}
         style={{
           // backgroundColor: "red",
-          width: 150,
-          // height: 200,
+          width: 400,
+          // height: 0,
         }}
       />
     </div>
@@ -289,7 +289,7 @@ const RecordVoters = React.memo(() => {
             marginBottom: 10,
           }}
         >
-          RUNOFF-ELECTION 2024-2025
+          2025-2026 GUILD ELECTIONS
         </h1>
       </div>
       <Row className="justify-content-center">
@@ -351,27 +351,30 @@ const RecordVoters = React.memo(() => {
                 onSlide={(index) => {
                   // console.log("the index", index);
                   if (index == 0) {
-                    setCardColor("bg-primary-gradient");
+                    setCardColor("bg-secondary");
                   } else if (index == 1) {
+                    setCardColor("bg-primary-gradient");
+                  } else if (index == 2) {
                     setCardColor("bg-warning");
+              
                   }
                 }}
               >
                 <Carousel.Item className="flex-column">
                   <CardContent
-                    candidateName="KASIMBA NOAH"
+                    candidateName="MAWANDA DERICK"
                     // otherNames="IGNATIUS MUSAAZI"
-                    slogan="You are the power"
-                    image={noah}
+                    slogan="For the people"
+                    image={mawanda}
                   />
                 </Carousel.Item>
-                {/* <Carousel.Item className="flex-column">
+                <Carousel.Item className="flex-column">
                   <CardContent
-                    candidateName="ZZIWA BASHIR"
-                    slogan="It's now or never"
-                    image={zziwa}
+                    candidateName="KATENDE MUHAMMAD"
+                    slogan="To lead, to serve, to inspire"
+                    image={katende}
                   />
-                </Carousel.Item> */}
+                </Carousel.Item>
                 {/* <Carousel.Item>
                   <CardContent
                     candidateName="MUSASIZZI NICKLAS"
@@ -381,9 +384,9 @@ const RecordVoters = React.memo(() => {
                 </Carousel.Item> */}
                 <Carousel.Item>
                   <CardContent
-                    candidateName="ORISINGURA BENSON"
-                    slogan="We are in this together"
-                    image={benon}
+                    candidateName="ALINDA MARVIN [CAMA]"
+                    slogan="Bold leadership with transparency"
+                    image={kama}
                   />
                 </Carousel.Item>
               </Carousel>
@@ -413,7 +416,7 @@ const RecordVoters = React.memo(() => {
                     }}
                   >
                     <i className="si si-social-facebook tx-30 text-white mb-2"></i>
-                    <p className="text-white mt-2">16th September</p>
+                    <p className="text-white mt-2">26th April</p>
                     <h3 className="text-white font-light">
                       <span
                         className="font-bold"

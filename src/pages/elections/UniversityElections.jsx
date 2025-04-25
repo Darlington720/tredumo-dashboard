@@ -9,6 +9,7 @@ const years = [
   { value: 1, label: "2022-2023" },
   { value: 2, label: "2023-2024" },
   { value: 3, label: "2024-2025" },
+  { value: 4, label: "2025-2026" },
 ];
 
 const campus = [
@@ -25,13 +26,13 @@ const schools = [
   //   value: { id: "2", alias: "SBA" },
   //   label: "School of Business Administration",
   // },
-  // { value: { id: "3", alias: "SLAW" }, label: "School of Law" },
-  // { value: { id: "4", alias: "SEDU" }, label: "School of Education" },
+  { value: { id: "3", alias: "SLAW" }, label: "School of Law" },
+  { value: { id: "4", alias: "SEDU" }, label: "School of Education" },
   // { value: { id: "5", alias: "SOSS" }, label: "School of social sciences" },
-  {
-    value: { id: "6", alias: "SCIAD" },
-    label: "School of Commercial Industrial Art and Design",
-  },
+  // {
+  //   value: { id: "6", alias: "SCIAD" },
+  //   label: "School of Commercial Industrial Art and Design",
+  // },
   // { value: { id: "7", alias: "SCOS" }, label: "School of Science " },
 ];
 
